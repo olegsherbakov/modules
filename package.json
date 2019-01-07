@@ -1,0 +1,40 @@
+{
+  "name": "modules",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node server.js --dev --hot --progress --local",
+    "build": "yarn install && webpack",
+    "format": "prettier --write \"**/*.{js,css}\""
+  },
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "8",
+    "classnames": "^2.2.6",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.3",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-hot-loader": "^4.3.6",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "reset-css": "^4.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.2.0",
+    "webpack-hot-middleware": "^2.23.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  }
+}

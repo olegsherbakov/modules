@@ -1,0 +1,35 @@
+@import '~reset-css';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 230%;
+}
+
+.Container {
+  padding: 13px;
+  border: 1px solid;
+}
+
+.Item {
+  margin: 13px 0;
+}
+
+.Disabled {
+  opacity: .3;
+}
+
+.Remove {
+  cursor: pointer;
+}
