@@ -2,8 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import classNames from 'classnames'
 
-import { toggle, remove } from '../actions'
-import styles from '../styles.scss'
+import { toggle, remove } from 'actions'
+import styles from 'styles.scss'
 
 function Item({ item: { id, active }, toggle, remove }) {
   const classes = classNames({
@@ -25,10 +25,8 @@ function Item({ item: { id, active }, toggle, remove }) {
 
       <input
         type="checkbox"
-        id={`item_${id}`}
         data-id={id}
         checked={active}
-        data-active={active}
         onChange={({ currentTarget }) =>
           toggle(+currentTarget.getAttribute(`data-id`))
         }

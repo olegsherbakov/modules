@@ -1,14 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { add } from '../actions'
+import { add } from 'actions'
 
-function Add({ add }) {
-  return <button onClick={add}>Add</button>
+function Add({ title = `Add`, add }) {
+  return <button onClick={add}>{title}</button>
 }
 
 const mapDispatchToProps = dispatch => ({
-  add: id => dispatch(add()),
+  add: () => dispatch(add()),
 })
 
 export default connect(

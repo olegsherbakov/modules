@@ -59,6 +59,11 @@ const webpackConfig = {
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.json'],
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'src/common'),
+      path.resolve(__dirname, 'src/modules'),
+    ],
   },
 }
 
